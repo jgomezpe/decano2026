@@ -1,6 +1,9 @@
 # Jonatan Gómez Perdomo, Decano
 Repositorio para la campaña a Decano de la Facultad de Ingeniería del profesor Jonatan Gómez Perdomo
 
+## Unirme
+Si quieres unirte a la campaña, envía un correo a la cuenta destinada para este proceso con tu id de github a jonatan.gomez@unal.edu.co
+
 ## @todo
 1. Formato web de versión resumida hoja de vida perfil profesor Jonatan Gómez (un perfil que se equipare a la tarjeta que tengo pero con más contenido y al lado ponemos la tarjeta).
 2. Tener los nombres de todos los que me quieran acompañar como colaboradores, un pequeño perfil y su tarjeta.
