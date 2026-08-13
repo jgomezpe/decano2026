@@ -1,1 +1,213 @@
+\documentclass[journal,10pt,twocolumn,letterpaper]{IEEEtran}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{booktabs}
+\usepackage{url}
+\usepackage{lipsum}
 
+\begin{document}
+
+\title{Proyecto FI-2028: Una Facultad de Ingeniería más Humana e Inteligente}
+
+\author{Profesor Jonatan Gómez Perdomo, Ph. D. \\
+Facultad de Ingeniería, Universidad Nacional de Colombia - Sede Bogotá}
+
+\maketitle
+
+\begin{abstract}
+El presente documento expone el proyecto institucional FI-2028 para la Decanatura de la Facultad de Ingeniería de la Universidad Nacional de Colombia (Sede Bogotá), estructurado bajo la metodología de ingeniería de sistemas complejos y control de procesos por realimentación. El plan resuelve restricciones operativas críticas mediante soluciones de reingeniería curricular y optimización de flujos de trabajo. Se propone un enfoque pedagógico disruptivo que desplaza la memorización del cálculo mecánico hacia la auditoría crítica y refutación de la Inteligencia Artificial (IA), sustentado en una Cátedra Transversal modular en el primer semestre que blinda la inserción de los estudiantes en ciclo de nivelación académica. En el ámbito de extensión, el proyecto fortalece el Plan Padrino ALUMNI, la articulación pregrado-posgrado en contratos de consultoría estatal e industrial del IEI, y la creación de un Fondo de Extensión Solidaria Territorial para transferencias tecnológicas en regiones vulnerables. Finalmente, la gobernanza institucional se optimiza mediante la automatización inteligente de trámites para docentes, administrativos y estudiantes, reduciendo la inercia burocrática a través de un protocolo de transición exprés por mérito, comités periódicos por avance de carrera y un sistema de evaluación continua cruzada. Los indicadores de gestión, calibrados con líneas base estadísticas reales, proyectan una reducción de la mortalidad académica máxima y tiempos de respuesta administrativa muy por debajo de los actuales, consolidando un ecosistema transparente, desburocratizado y profundamente centrado en el humanismo neutral y la dignidad individual.
+\end{abstract}
+
+\begin{IEEEkeywords}
+Ingeniería de Procesos, Inteligencia Artificial, Reforma Curricular, Extensión Territorial, Humanismo Neutral, Gestión Universitaria Abierta.
+\end{IEEEkeywords}
+
+
+\section{Introducción y Diagnóstico del Sistema}
+\IEEEPARstart{L}{a} Facultad de Ingeniería de la Universidad Nacional de Colombia (Sede Bogotá) gestiona un ecosistema de alta complejidad académica, investigativa y administrativa que atiende a una porción crítica de la población universitaria del país. Con una matrícula activa de más de 7,100 estudiantes de pregrado distribuidos en sus 9 programas curriculares, más de 600 estudiantes de posgrado en sus niveles de especialización, maestría y doctorado \cite{planeacion_unal_cifras}, una planta docente superior a los 360 profesores entre personal de planta (259) y ocasionales (103) \cite{planeacion_unal_cifras}, y más de 60 grupos de investigación \cite{horus}, la Facultad de Ingeniería representa el principal motor tecnológico de la nación. No obstante, la evaluación de este sistema institucional evidencia deficiencias estructurales y rigideces operativas que afectan su rendimiento interno. Estas limitaciones impactan negativamente la experiencia de la comunidad académica —estudiantes, docentes y administrativos— y restringen la capacidad de la institución para adaptarse a las demandas del entorno.
+
+El rápido avance de la Inteligencia Artificial (IA) y la automatización cognitiva, llevan a la educación superior a enfrentarse a una disrupción sistémica que le exige transformar la pedagogía tradicional \cite{disrupcion_ia_education, disrupcion_ia_education2}. Los métodos evaluativos históricos, estructurados alrededor de la memorización de fórmulas y el desarrollo manual de cálculos algorítmicos operativos repetitivos, han quedado obsoletos debido a la capacidad de asistentes de cómputo avanzados para ejecutar dichas tareas de forma instantánea y generalmente exacta \cite{ia_engineering_pedagogy, ia_engineering_pedagogy2}. Mantener el enfoque pedagógico previo deshumaniza la formación académica, pues reduce la interacción en el aula a procesos mecánicos y trata al estudiante como un procesador de datos rudimentario en lugar de un pensador holístico. Por consiguiente, el eje vector de este proyecto institucional radica en una reingeniería curricular profunda: migrar el valor del futuro ingeniero desde la ejecución mecánica del cálculo hacia la capacidad de formulación de hipótesis, auditoría algorítmica y juicio ético-crítico. La IA no se concibe aquí como un producto accesorio, sino como el catalizador metodológico para devolver al aula el rigor conceptual y el humanismo aplicados al desarrollo nacional.
+
+Sin embargo, la viabilidad de esta reingeniería no solo depende de la adopción tecnológica, sino de la resolución inmediata de las deficiencias estructurales en los ciclos de fundamentación inicial. El Componente de Nivelación Obligatoria (que incluye asignaturas como Matemáticas Básicas y Lecto-Escritura) opera de manera masiva, no otorga nota numérica y se computa con cero (0) créditos en el SIA. Esto desarticula la secuencia lógica de las mallas curriculares de las diferentes ingenierías, generando saturación horaria y un incremento en las tasas de deserción temprana en los subgrupos de estudiantes más vulnerables \cite{planeacion_unal_cifras}. A esta problemática de diseño curricular se suma un factor humano crítico: la baja empatía pedagógica —y, en casos críticos, dinámicas de hostilidad o abuso de autoridad evaluativa— por parte de alguno docentes. Este enfoque tradicional, centrado en el filtro punitivo y la memorización algorítmica manual en lugar del acompañamiento y la comprensión aplicada, genera barreras psicológicas y académicas severas para los estudiantes de ingeniería \cite{clima_aula_superior}. Dicha desconexión pedagógica desmotiva las vocaciones técnicas y eleva artificialmente los índices de mortalidad académica.
+
+Ahora, los canales de transferencia tecnológica de la Vicedecanatura de Investigación y Extensión expresan un desacoplamiento con el entorno socioeconómico y productivo. A pesar de contar con una red masiva de profesionales egresados, los mecanismos institucionales vigentes no logran capitalizar el retorno de este capital humano hacia las aulas, limitando la interacción de la comunidad ALUMNI. Esta desconexión con el medio externo se traduce en una brecha entre los requerimientos técnicos del mercado laboral actual y las temáticas desarrolladas en los trabajos de grado de pregrado. Asimismo, los proyectos de consultoría especializada gestionados a través del Instituto de Extensión e Investigación (IEI) operan frecuentemente bajo un modelo de silos cerrados, donde la participación estudiantil se concentra en ciclos avanzados de posgrado. Esta configuración margina a la población de pregrado de entornos reales de co-creación técnica y priva a los laboratorios de fuentes de financiamiento autónomas y sostenibles que mitiguen las limitaciones del presupuesto público indexado \cite{planeacion_unal_cifras}.
+
+Adicionalmente, el sistema registra una restricción crítica en la gestión de su capital humano y el clima institucional, asociada a la desarticulación de las políticas de bienestar universitario. Los indicadores de salud mental de la Facultad deben medir los niveles de agotamiento crónico (\textit{burnout}) y deserción provocados por la sobrecarga académica y la falta de flexibilización operativa en momentos de vulnerabilidad socioeconómica \cite{planeacion_unal_cifras}. El ecosistema requiere una transición hacia un modelo de humanismo neutral, donde los mecanismos de apoyo físico, psicopedagógico y los programas de permanencia de la Dirección de Bienestar se centren en la dignidad inherente de las personas \cite{clima_aula_superior2}. Garantizar un entorno académico seguro, equitativo e inclusivo exige valorar a estudiantes, docentes y administrativos de forma individual por sus capacidades y méritos, blindando los espacios de deliberación técnica de debates dogmáticos y priorizando la salud mental colectiva como variable de control fundamental para la estabilidad del sistema.
+
+Finalmente, la velocidad y opacidad de los flujos de trámites transversales afecta tanto a los estudiantes como al cuerpo docente y administrativo en solicitudes críticas. La dependencia de arquitecturas de procesos burocráticas degrada los tiempos de respuesta institucionales. Para resolver esta restricción, el proyecto contempla la implementación de sistemas inteligentes de automatización de flujos de trabajo (Workflow Automation) asistidos por agentes conversacionales y analítica predictiva. Como demuestra la literatura en gestión de la educación superior, estas herramientas mejoran sustancialmente la gobernanza interna y optimizan la toma de decisiones informadas \cite{ia_administracion_u}.
+
+Por ende, este plan se postula como un proyecto de ingeniería de procesos diseñado para optimizar el rendimiento de la Facultad a través de soluciones de arquitectura curricular y de gestión, garantizando la sostenibilidad financiera, el fortalecimiento de los nexos con el entorno (Alumni) y un bienestar centrado estrictamente en la dignidad del individuo.
+
+\section{Estructura de Desglose del Trabajo (EDT)}
+El plan de optimización e ingeniería institucional se subdivide en componentes sistémicos interdependientes, orientados a resolver de manera directa las causas raíz diagnosticadas en la sección anterior.
+
+\subsection{1.0 Componente Pedagógico de Primer Ingreso}
+Para mitigar el desorden en la trayectoria de los nuevos estudiantes provocado por los bloques masivos de nivelación, y responder al desafío de la automatización cognitiva, el proyecto establece una reingeniería curricular del ciclo inicial mediante un enfoque modularizado y técnico:
+
+\subsubsection{Cátedra Transversal de IA y Pensamiento Crítico}
+Se propone la creación de una asignatura obligatoria de cuatro (4) créditos, clasificada bajo la Tipología B (Componente de Fundamentación) en el SIA, dictada durante el Primer Semestre para el 100\% de los admitidos a la Facultad \cite{unal_acuerdo033}. Su diseño curricular se estructura como un módulo nivelatorio de pensamiento lógico-crítico y auditoría de sistemas de información. El núcleo formativo entrena al estudiante en formular hipótesis, detectar alucinaciones en modelos de lenguaje (LLMs) y validar sesgos conceptuales. El mecanismo de evaluación romperá la calificación tradicional del cálculo mecánico aislado; la aprobación del curso dependerá estrictamente de la sustentación metodológica que demuestre la capacidad del estudiante para refutar y auditar los resultados de la máquina.
+
+\subsubsection{Enfoque Modular de Nivelación Inteligente}
+La inserción de esta cátedra permite reorganizar el primer semestre en dos perfiles de usuario definidos, protegiendo las agendas horarias, fortaleciendo la identidad profesional temprana y reduciendo la deserción por frustración operativa en los bloques masivos:
+\begin{itemize}
+    \item \textbf{Perfil A (Estudiantes con nivelación obligatoria):} Cursarán dicha nivelación a la par de la nueva Cátedra Transversal de IA (4 créditos) e Introducción a la Ingeniería (2 créditos). En el escenario donde el estudiante requiera nivelar una sola asignatura, se integrará una materia de Libre Elección (3 créditos), consolidando una carga inicial óptima de nueve (9) créditos efectivos en el SIA. Este diseño evita su aislamiento tecnológico y les permite interactuar directamente con la identidad de su profesión desde el primer día.
+    \item \textbf{Perfil B (Estudiantes de ingreso directo):} Aquellos que inician el ciclo tradicional cursarán la Cátedra Transversal de IA (4 créditos) junto a Cálculo Diferencial (4 créditos), Introducción a la Ingeniería (2 créditos) y una electiva de contexto (3 créditos), manteniendo una carga balanceada de 13 créditos en el SIA.
+\end{itemize}
+
+\subsubsection{Flexibilización y Transición Curricular Transversal}
+Como consecuencia directa de la inserción de la Cátedra Transversal de IA, el proyecto exige una reingeniería y flexibilización de los micrositios de todas las asignaturas de la Facultad (pregrado y posgrado). Bajo la coordinación de los Comités Asesores de Carrera, se impulsará la actualización curricular para integrar herramientas de automatización cognitiva en cada curso de los 9 programas de ingeniería. Al delegar los cálculos repetitivos y el procesamiento masivo de datos a asistentes de IA supervisados, se reducirá la densidad de contenidos puramente operativos dentro de los pénsums. Esta reducción del componente memorístico liberará hasta un 25\% de la carga temporal presencial de las asignaturas tradicionales, permitiendo la flexibilización de los créditos hacia modalidades híbridas de aprendizaje, resolución de proyectos de ingeniería concurrente y talleres prácticos de diseño conceptual. Esta transición no disminuye el rigor académico; por el contrario, eleva el estándar de egreso al enfocar la evaluación en la formulación de arquitecturas de solución y en la validación crítica de los resultados, dinamizando el tránsito de los estudiantes por la malla curricular y optimizando la eficiencia de titulación de la Facultad.
+
+\subsection{2.0 Arquitectura Normativa e Interfacultades}
+Las fricciones pedagógicas externas y los índices atípicos de reprobación en los ciclos básicos exigen una intervención sistémica en los canales de articulación institucional de la Sede Bogotá:
+
+\subsubsection{Mesa Técnica de Innovación en Ciencias Exactas}
+Se radicará una solicitud formal y técnica ante la Facultad de Ciencias para actualizar las asignaturas de servicio prestadas. El objetivo es coordinar la transición de las evaluaciones punitivas memorísticas hacia metodologías de análisis conceptual asistidas por software especializado.
+
+\subsubsection{Activación del Mecanismo de Autonomía Curricular}
+Si el plan A no es posible, la decanatura impulsará un acuerdo de modificación estructural para crear la línea de cursos propios, cursos diseñados bajo el marco conceptual del Acuerdo 033 de 2007 del CSU, que absorberán los créditos del componente básico y pasarán a ser administradas, evaluadas y financiadas bajo la dirección directa de nuestra Facultad, garantizando empatía pedagógica, rigor contextualizado y control total del clima de aula.
+
+\subsection{3.0 Red de Retorno, Investigación y Extensión (ALUMNI-IEI)}
+Para revertir el aislamiento del entorno productivo y capitalizar la red de egresados de la Facultad, se plantea una reingeniería de las políticas de transferencia y co-creación a través de la Vicedecanatura de Investigación y Extensión:
+
+\subsubsection{Estructura Operativa del Plan Padrino ALUMNI}
+Se propone fortalecer el Sistema de Información de Egresados (SIE), canalizando el retorno de profesionales que ocupan posiciones de liderazgo en los sectores de infraestructura, consultoría y alta tecnología. Este subcomponente operará bajo un modelo de beneficio mutuo: los egresados certificados aportarán a un fondo centralizado de bienestar destinado exclusivamente a auxilios económicos básicos (alimentación, transporte y conectividad) para los estudiantes. A cambio de este respaldo financiero y mentoría de adaptación universitaria, las empresas de los egresados aportantes recibirán prioridad técnica, tarifas preferenciales y acceso prioritario a los servicios de consultoría especializada, laboratorios e inventario tecnológico de la Facultad.
+
+\subsubsection{Cátedra del Egresado y Enlace Pregrado-Posgrado}
+Se propondrá redefinir el alcance de la Cátedra del Egresado y habilitar normativamente a profesionales destacados para codirigir tesis de grado y dictar hasta el 30\% de los contenidos prácticos en asignaturas de últimos semestres como profesores especiales u ocasionales. Paralelamente, se espera fortalecer el modelo de operación del Instituto de Extensión e Investigación (IEI) para que todo contrato de consultoría o proyecto de extensión financiado por la industria incorpore al menos a un estudiante de pregrado como asistente técnico remunerado, dando prioridad a aquellos con alto rendimiento académico que requieran apoyo socioeconómico.
+
+\subsubsection{Extensión Estatal, Monitoreo Nacional y Fondo Solidario}
+El proyecto institucional posicionará a la Facultad como el consultor técnico prioritario del Estado en el diseño, auditoría y ejecución de los grandes proyectos de infraestructura, software y desarrollo industrial del país. A través del IEI, se implementará una unidad de monitoreo permanente orientada a evaluar los desarrollos y megaproyectos de ingeniería que se lleven a cabo en el territorio nacional, garantizando que la academia emita conceptos técnicos independientes y basados en evidencia. Paralelamente, se creará el Fondo de Extensión Solidaria Territorial, financiado mediante la retención de un porcentaje fijo de los excedentes financieros generados por los contratos de consultoría comercial con la gran industria. Este fondo financiará de manera autónoma proyectos de innovación social y transferencia tecnológica en municipios y comunidades vulnerables que carezcan de recursos para contratar alta ingeniería.
+
+\subsubsection{Potenciación de la Investigación y Maduración Tecnológica}
+Para maximizar el impacto de los más de 60 grupos de investigación de la Facultad \cite{horus}, el proyecto implementará el modelo de Niveles de Madurez Tecnológica (TRL - Technology Readiness Levels) como criterio de indexación y asignación de recursos internos. La Vicedecanatura de Investigación y Extensión creará una Unidad de Gestión de Proyectos de Convocatoria Especial, encargada de asumir el 100\% del diligenciamiento de informes financieros y de personal, liberando a los investigadores principales de las restricciones burocráticas que frenan la producción científica. Paralelamente, se financiarán semilleros de investigación interdepartamentales mediante un fondo de capital semilla cruzado, priorizando aquellos proyectos de ciencia de datos, nuevos materiales, bioprocesos y transición energética orientados a resolver los retos de infraestructura y software identificados por la unidad de monitoreo nacional del IEI. Este mecanismo acelerará el tránsito de la investigación básica (TRL 1-3) hacia prototipos funcionales y patentes aplicadas (TRL 4-7) co-creadas entre estudiantes de pregrado y posgrado, garantizando que el conocimiento científico retorne de forma directa en patentes comerciales, licencias tecnológicas y soluciones de alta ingeniería para el desarrollo del país.
+
+\subsection{4.0 Humanización y Control de Gestión}
+Para reducir la inercia burocrática, blindar la toma de decisiones y centrar la operación institucional en la dignidad de los individuos, se proponen soluciones de reingeniería de procesos e inclusión neutral basadas en el mérito y la transparencia:
+
+\subsubsection{Democratización Directa y Comités por Avance de Carrera}
+Se institucionalizarán los Comités de Diálogo Periódico con la Decanatura, estructurados como espacios de participación directa y neutrales, libres de debates o polarizaciones dogmáticas. Estos comités segmentarán a la población estudiantil por cohortes de edad académica y avance curricular (estudiantes en ciclo de fundamentación, ciclo disciplinar y ciclo profesional). Las sesiones periódicas permitirán a las directivas evaluar en tiempo real la efectividad de la flexibilización por IA, el estado de la salud mental colectiva, la calidad del trato en el campus y el desempeño de los programas de permanencia de la Dirección de Bienestar \cite{salud_mental_engineering}.
+
+\subsubsection{Simplificación de Trámites}
+Se ejecutará un plan de reingeniería sobre las cadenas lógicas de aprobación. Utilizando el sistema inteligente de automatización de flujos de trabajo definido en el diagnóstico, se rediseñará integralmente el aplicativo \textit{Ticket FIbog}. Al eliminar firmas redundantes, pasos analógicos y la discrecionalidad administrativa, se proyecta una reducción del 50\% en los tiempos de respuesta institucionales, transformando la experiencia del usuario interno.
+
+\subsubsection{Mérito Institucional y Planes de Mejora del Desempeño}
+La Facultad implementará un sistema de evaluación continua cruzada entre los tres estamentos (estudiantes, docentes y administrativos). La totalidad del equipo directivo será seleccionado mediante convocatorias públicas basadas en perfiles técnicos y méritos verificables. Asimismo, se aplicará una política de mejora del desempeño tanto para docentes como para personal administrativo. Ante calificaciones críticas se activará un Plan de Mejora Pedagógica y de Convivencia con metas medibles mensuales, escalando a los órganos de control disciplinario en casos que lo ameriten.
+
+\subsubsection{Protocolo de Transición y Selección Concurrente}
+Dado que el periodo comprendido entre la designación del Decano y su toma de posesión oficial es críticamente corto, la gestión del riesgo de parálisis administrativa exige un protocolo de transición concurrente. Durante el periodo de campaña, la candidatura publicará los perfiles de cargo, competencias técnicas y requisitos objetivos requeridos para ocupar cargos como las Vicedecanaturas y Secretaría de Facultad. Se habilitará una ventana de postulación digital anticipada para que los docentes interesados radiquen sus hojas de vida y propuestas de plan de gestión alineadas con este proyecto. Un panel técnico evaluador independiente precalificará las propuestas bajo una matriz de elegibilidad parametrizada. Este proceso concurrente garantizará que, al momento de la designación oficial, el Decano cuente con una terna de candidatos idóneos calificados por mérito para cada cargo. Así se reduce el tiempo de conformación del equipo directivo a menos de 48 horas, garantizando la continuidad operativa inmediata de la Facultad desde el primer día de posesión.
+
+\section{Matriz de Control y Métricas de Éxito}
+Para garantizar la viabilidad técnica del proyecto institucional y erradicar la discrecionalidad en la evaluación de la gestión, la operación de la Facultad se regirá bajo un enfoque de Control de Procesos por Realimentación (Feedback Control). Las variables de estado del sistema serán monitoreadas semestralmente a través de indicadores de rendimiento cuantitativos (KPIs) parametrizados mediante variables compactas acopladas al estándar de dos columnas.
+
+\subsection{Definición Matemática de las Variables de Control}
+\begin{enumerate}
+    \item \textbf{Tiempo de Respuesta Administrativa ($T_{SLA}$):} Evalúa la eficiencia del flujo inteligente del aplicativo para trámites de los tres estamentos. Se define como:
+    \begin{equation}
+    T_{SLA} = \frac{1}{N} \sum_{i=1}^{N} (t_{r, i} - t_{o, i})
+    \end{equation}
+    Donde $N$ es el volumen total de solicitudes radicadas, $t_{r}$ es el tiempo de resolución definitiva de la solicitud $i$, y $t_{o}$ es el tiempo de radicación inicial, medidos en días hábiles. La meta operativa del sistema es $T_{SLA} \le 5$ días hábiles.
+    
+    \item \textbf{Índice de Clima y Respeto en el Aula ($ICRA$):} Variable estamentaria cruzada que mide la empatía pedagógica, salud mental y la ausencia de conductas punitivas o de abuso en el aula:
+    \begin{equation}
+    ICRA = \frac{\sum V_{c}}{\sum V_{t}} \times 100\%
+    \end{equation}
+    Donde $V_{c}$ representa la sumatoria de valoraciones estudiantiles satisfactorias en componentes de trato digno y respeto, y $V_{t}$ es el total de evaluaciones diligenciadas en el periodo. Un valor de $ICRA < 75\%$ activará el Plan de Mejora Pedagógica Obligatorio (4.1.3). El ICRA será medido mediante encuesta institucional semestral.
+    
+    \item \textbf{Tasa de Retención Temprana Modular ($TRM$):} Evalúa el impacto de la reingeniería modular del primer semestre sobre la población del Perfil A (ciclo de nivelación):
+    \begin{equation}
+    TRM = \frac{S_{m}}{S_{a}} \times 100\%
+    \end{equation}
+    Donde $S_{m}$ corresponde a los estudiantes del Perfil A que realizan una matrícula efectiva en el segundo periodo académico, y $S_{a}$ es el total de estudiantes admitidos inicialmente bajo dicho perfil. La meta calibrada se establece en $TRM \ge 92\%$.
+\end{enumerate}
+
+\subsection{Tabulación de Indicadores y Metas Operativas}
+La Tabla I condensa el tablero de control de ingeniería (Dashboard) ajustado a los datos históricos reales de la Sede Bogotá \cite{planeacion_unal_cifras}, fijando umbrales de alerta exigentes que reflejen el impacto de la flexibilización curricular y la asistencia de herramientas de IA en la reducción del componente de reprobación operativa. La parametrización de las metas expuestas en la Tabla I no responderá a proyecciones arbitrarias, sino a un análisis preliminar basado en diferentes trabajos \cite{mathsapproval2} y a datos de deserción \cite{planeacion_unal_cifras}. La fijación del umbral crítico en $M_{max} < \theta\%$ se sustentará matemáticamente en el desplazamiento de la carga cognitiva hacia asistentes de IA supervisados, eliminando el componente de memorización algorítmica y reduciendo el error no forzado en el rendimiento del estudiante y al correlacionar estos datos con los factores de deserción temprana. Asimismo, el límite de $T_{SLA} \le d$ días hábiles se calibrará a partir del volumen de solicitudes registradas en el sistema de radicación actual, donde la automatización de flujos de trabajo (*Workflow Automation*) liberará los cuellos de botella administrativos y reducirá la varianza del tiempo de respuesta en un porcentaje esperado superior al 50\%. Los datos brutos anonimizados se integrarán en un repositorio institucional abierto, garantizando una auditoría estamentaria transparente.
+
+
+\begin{table}[htbp]
+\caption{Matriz de Indicadores Técnicos de Gestión (FI-2026)}
+\begin{center}
+\begin{tabular}{llc}
+\toprule
+\textbf{Código} & \textbf{Indicador de Rendimiento (KPI)} & \textbf{Meta Estándar} \\
+\midrule
+KPI-01 & Tiempo promedio de respuesta ($T_{SLA}$) & $\le d$ Días \\
+KPI-02 & Índice de Clima en el Aula ($ICRA$) & $\ge 75\%$ \\
+KPI-03 & Mortalidad máxima por asignatura ($M_{max}$) & $< \theta\%$ \\
+KPI-04 & Índice de Transparencia de Selección ($ITS$) & $100\%$ Mérito \\
+KPI-05 & Estudiantes pregrado en extensión IEI & $+35\%$ Anual \\
+KPI-06 & Cobertura de Extensión Solidaria Regional & $\ge 5$ Regiones \\
+\bottomrule
+\end{tabular}
+\end{center}
+\label{tab:metrics}
+\end{table}
+
+\section{Conclusiones y Discusión de Impacto}
+La reingeniería sistémica de la Facultad de Ingeniería de la Universidad Nacional de Colombia no depende de promesas abstractas ni de agendas de polarización ideológica, sino de un enfoque humano riguroso basado en el mérito, la simplificación de flujos y la actualización metodológica ante las herramientas de automatización cognitiva. 
+
+El Proyecto FI-2028 demuestra que la inserción de la Inteligencia Artificial en el aula, lejos de deshumanizar o diluir el rigor académico, actúa como el catalizador definitivo para devolver al espacio educativo el valor del pensamiento crítico, sustituyendo la evaluación punitiva del cálculo repetitivo por la capacidad analítica de auditoría y refutación algorítmica. 
+
+El diseño curricular modular propuesto para el primer ingreso resuelve la desarticulación histórica de los componentes de nivelación. Al integrar la identidad profesional desde el primer día y blindar las agendas horarias de la población vulnerable bajo el Perfil A, el sistema reduce la deserción temprana por frustración operativa y dota de sentido práctico inmediato a las ciencias exactas, recuperando el control del clima de aula y garantizando una empatía pedagógica real centrada en el estudiante. La sostenibilidad del modelo se consolida al transformar la investigación y la extensión en un ecosistema abierto de transferencia tecnológica y retorno de capital humano. 
+
+El Plan Padrino ALUMNI y la reforma del IEI inyectan recursos autónomos a la planta física y aseguran que los proyectos financiados por el sector productivo y el Estado incluyan, por derecho propio, a estudiantes de pregrado en dinámicas reales de co-creación. De igual manera, el Fondo de Extensión Solidaria Territorial proyecta el conocimiento científico avanzado hacia las regiones apartadas de Colombia, reafirmando el compromiso histórico de la Universidad con el desarrollo y la equidad social del país. 
+
+Finalmente, la gobernanza institucional se blinda contra la discrecionalidad administrativa a través de una matriz de control parametrizada matemáticamente y auditable en repositorios abiertos. La simplificación de trámites docentes y estudiantiles mediante sistemas inteligentes reduce los tiempos de respuesta, devolviendo el ancho de banda necesario para la producción científica de vanguardia. Al instaurar un sistema de evaluación continua cruzada entre los tres estamentos y condicionar la permanencia de la dirección y la docencia al trato digno, al mérito y al desempeño medible, esta propuesta de gobierno sitúa al individuo en el centro de la institución. 
+
+\textbf{El futuro no consiste en imitar los procesos mecánicos de las máquinas, sino en potenciar el juicio ético, el rigor conceptual y el criterio humano que nos hacen irreemplazables}.
+
+\section{Declaración de Uso de Tecnologías de Inteligencia Artificial}
+Para el desarrollo de la presente propuesta, se utilizaron herramientas de Inteligencia Artificial (IA) generativa como soporte técnico y de optimización de texto. La IA se empleó exclusivamente para el procesamiento de redacción y la corrección estilística. La autoría intelectual, el análisis crítico, la verificación rigurosa de los datos estadísticos y las conclusiones presentadas son de total responsabilidad del autor, quien garantiza la originalidad y la integridad académica del contenido.
+
+\bibliographystyle{IEEEtran}
+\begin{thebibliography}{5}
+
+\bibitem{planeacion_unal_cifras}
+Oficina de Planeación y Estadística Sede Bogotá, ``La Sede en Cifras 2025". [En línea]. Disponible en: \url{https://planeacion.bogota.unal.edu.co/sede_en_cifras/}
+
+\bibitem{horus}
+Sistema de Visualización de la capacidad investigativa y producción científica de la Universidad Nacional de Colombia, 2026. [En línea]. Disponible en: \url{https://horus.unal.edu.co/}
+
+\bibitem{disrupcion_ia_education}
+M. García-Sánchez y A. Pérez-Martínez (2025). Educación disruptiva con inteligencia artificial: desafíos y competencias para carreras de ingeniería en la sociedad digital. Ciencia Latina Revista Científica Multidisciplinar, 9(5), 1012-1031. 
+
+\bibitem{disrupcion_ia_education2}
+Yu-Zheng Lin, Ahmed Alhamadah, Matthew Redondo, Karan Patel, Sujan Ghimire, , Banafsheh Saber Latibari, Soheil Salehi and Pratik Satam. (2024). Transforming Engineering Education Using Generative AI and Digital Twin Technologies. 10.48550/arXiv.2411.14433.
+
+\bibitem{ia_engineering_pedagogy}
+Mahmoud, Q. H. (2026). Reimagining Assessment in the Age of Generative AI: Lessons from Open-Book Exams with ChatGPT. arXiv preprint arXiv:2605.12363. https://arxiv.org/abs/2605.12363
+
+\bibitem{ia_engineering_pedagogy2}
+D. J. Malan and J. Radomski (2025). Balancing AI-assisted learning and traditional assessment. Frontiers in Education, 10, Artículo 1596462.
+
+\bibitem{clima_aula_superior}
+Robles Camargo, J. C. (2021). Relación entre el clima escolar y el rendimiento académico en estudiantes de ingeniería industrial. NovaRUA, 13(22), 43-64. Revistas Electrónicas UACJ.
+
+\bibitem{clima_aula_superior2}
+L. A. Garcés, y J. C. Rúa (2015). El clima de aula en cursos de Análisis Matemático para Ingeniería. Revista Lasallista de Investigación, 12(2), 56-65. Dialnet
+
+
+\bibitem{ia_administracion_u}
+VH Fernández-Bedoya, AG Mejía-Osorio y EJ Rojas-Villanueva. Decision-Making and Governance in Public Universities in the Era of Artificial Intelligence: A Systematic Review. Administrative Sciences. 2026; 16(7):334. https://doi.org/10.3390/admsci16070334
+
+\bibitem{unal_acuerdo033}
+Universidad Nacional de Colombia, ``Acuerdo 033 de 2007 del Consejo Superior Universitario: Lineamientos básicos para el proceso de formación,'' Bogotá, 2007.
+
+\bibitem{salud_mental_engineering}
+Janeth Pilar Vera,  Paola Llaguno y Darlin Ronquillo. (2026). ``Estrés académico y su impacto en el bienestar emocional de estudiantes de pregrado: estudio de caso''. Revista JRG de Estudos Acadêmicos. 9. e093563. 10.55892/jrg.v9i20.3563.
+
+\bibitem{mathsapproval2}
+O. González y J. B. Clavijo. (2016). Las matemáticas y su influencia en la deserción universitaria (Trabajo de grado de especialización). Universidad Militar Nueva Granada.
+
+\bibitem{mathsapproval}
+David Blázquez Sanz. (2025). ¿Debemos sufrir estudiando matemáticas?. UN Periódico. https://periodico.unal.edu.co/articulos/debemos-sufrir-estudiando-matematicas.
+
+
+\end{thebibliography}
+
+\end{document}
