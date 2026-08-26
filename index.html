@@ -3,16 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Campaña Electoral & Academia | Tu Nombre</title>
+    <title>Campaña Decano 2026-2028 | Jonatan Gómez Perdomo</title>
     <!-- Iconos de FontAwesome -->
+    <!-- Enlace local definitivo: Ya no depende de internet ni servidores externos -->
     <link rel="stylesheet" href="https://cloudflare.com">
     <style>
         :root {
-            --primary-color: #2563eb; /* Azul moderno, cámbialo por tu color de campaña */
-            --secondary-color: #1e3a8a;
-            --text-color: #1f2937;
-            --bg-color: #f9fafb;
-            --card-bg: #ffffff;
+            /* Tu color de campaña: Un verde profesional, visible y con autoridad */
+            --primary-color: #059669; /* Verde esmeralda institucional */
+            --primary-hover: #047857; /* Verde un poco más oscuro para cuando pasas el ratón */
+            --secondary-color: #064e3b; /* Verde bosque profundo para títulos y fondos oscuros */
+            --text-color: #1f2937; /* Gris casi negro para que la lectura sea cómoda */
+            --bg-color: #f0fdf4; /* Un blanco con un ligerísimo matiz verde para el fondo general */
+            --card-bg: #ffffff; /* Blanco puro para las tarjetas y visores para que resalten */
         }
 
         * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
@@ -34,13 +37,69 @@
         .btn-container { display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; margin-bottom: 2rem; }
         .btn { padding: 0.8rem 1.8rem; border-radius: 50px; font-weight: bold; display: inline-flex; align-items: center; gap: 0.5rem; transition: transform 0.2s, box-shadow 0.2s; }
         .btn:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2); }
-        .btn-primary { background-color: var(--primary-color); color: white; }
-        .btn-secondary { background-color: #e5e7eb; color: var(--text-color); }
+        .btn-primary { 
+            background-color: var(--primary-color); 
+            color: white; 
+        }
+        .btn-primary:hover { 
+            background-color: var(--primary-hover); 
+        }
+        
+        /* Cambia los colores por los que tú quieras */
+        .btn-secondary {
+        background-color: transparent;
+        border: 2px solid var(--primary-color);
+        color: var(--primary-color);
+        transition: all 0.3s ease;
+        }
+
+        .btn-secondary:hover {
+        /* Se invierte por completo usando tus variables */
+        background-color: var(--primary-hover);
+        border-color: var(--primary-hover);
+        color: #ffffff; 
+        }
 
         /* Redes Sociales */
-        .social-links { display: flex; justify-content: center; gap: 1.5rem; font-size: 1.8rem; margin-top: 1rem; }
-        .social-links a { transition: color 0.3s; }
-        .social-links a:hover { color: var(--primary-color); }
+/* Contenedor principal de los enlaces */
+.social-links {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Alinea todo perfectamente al centro horizontal */
+  gap: 25px; /* Espacio ideal entre cada elemento */
+}
+
+/* Estilo general para los iconos de Font Awesome */
+.social-links a i {
+  font-size: 28px;
+  transition: transform 0.2s ease;
+  vertical-align: middle;
+}
+
+.fa-graduation-cap {
+    font-size: 32px !important; /* Un poco más grande que los de 28px */
+}
+
+/* Estilo especial para la imagen de tu grupo */
+.group-icon-img {
+  width: 32px;           /* Subimos un poquito para nivelar visualmente */
+  height: 32px;          
+  object-fit: contain;
+  vertical-align: middle;
+  border-radius: 50%;    /* Hace que la imagen quede redonda si tiene bordes rígidos */
+  background-color: #ffffff; /* Le da un fondo blanco limpio por si tu logo es oscuro o transparente */
+  padding: 2px;          /* Deja un aire pequeño alrededor del logo dentro del círculo */
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1); /* Sombra muy suave para que resalte profesionalmente */
+  transition: transform 0.2s ease;
+}
+
+
+/* Efecto visual al pasar el mouse por encima de CUALQUIERA de los tres */
+.social-links a:hover i,
+.social-links a:hover .group-icon-img {
+  transform: scale(1.18);
+}
 
         /* Contenedores de Secciones */
         .section { padding: 4rem 1rem; max-width: 1000px; margin: 0 auto; }
@@ -65,23 +124,121 @@
             .pdf-embed { display: none; } /* En móviles los PDFs embebidos a veces fallan, mostramos botón */
             .mobile-pdf-notice { display: block; }
         }
+
+        /* Sección de Documentos */
+.documentos-section {
+    padding: 60px 20px;
+    background-color: #f8fafc; /* Un fondo gris casi blanco para diferenciar la sección */
+    text-align: center;
+}
+
+.section-title {
+    color: #1e293b;
+    font-size: 2rem;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+/* Contenedor en cuadrícula flexible */
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Diseño de cada cajita */
+.doc-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 30px 25px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+/* Efecto al pasar el mouse por la cajita */
+.doc-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    border-color: var(--primary-color);
+}
+
+.card-icon {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.doc-card h3 {
+    color: #1e293b;
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.doc-card p {
+    color: #64748b;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    flex-grow: 1; /* Hace que todos los textos ocupen el mismo espacio */
+}
+
+/* Botón de descarga dentro de la tarjeta */
+.btn-download {
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    padding: 10px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: all 0.2s ease;
+}
+
+.btn-download:hover {
+    background-color: var(--primary-color);
+    color: #ffffff;
+}
+
+/* Ajustes de tamaño individuales para un balance perfecto */
+.fa-graduation-cap {
+  font-size: 32px !important;
+}
+
+.fa-linkedin, .fa-linkedin-in {
+  font-size: 30px !important;
+}
+
     </style>
 </head>
 <body>
+<i class="fa fa-book"></i> Ver Propuesta
 
     <nav>
         <a href="#inicio">Inicio</a>
         <a href="#propuesta">Propuesta</a>
-        <a href="#trayectoria">Biografía y Redes</a>
-        <a href="#investigacion">Investigación</a>
+        <a href="#trayectoria">Trayectoria</a>
+        <a href="#documentos">Documentos Estratégicos</a>
     </nav>
 
     <!-- INICIO / HERO -->
     <section id="inicio" class="hero">
         <!-- Reemplaza con tu foto guardada en la misma carpeta, ej: foto.jpg -->
-        <img src="https://placeholder.com" alt="Tu Nombre" class="hero-img">
-        <h1>Tu Nombre</h1>
-        <p>Candidato a [Nombre del Cargo/Representación]. Investigador, docente y comprometido con la transformación académica.</p>
+        <img src="JGP.jpg" alt="Jonatan Gómez Perdomo" class="hero-img">
+        <h1>Jonatan Gómez Perdomo</h1>
+        <p>Candidato a Decano Facultad de Ingeniería. Investigador, docente y comprometido con la transformación académica.</p>
+        <p>🗳️ ¡Juégatela por la Facultad, Vota #1! 🚀</p>
         
         <div class="btn-container">
             <a href="#propuesta" class="btn btn-primary"><i class="fa-solid fa-file-lines"></i> Ver Propuesta</a>
@@ -92,7 +249,16 @@
             <a href="https://instagram.com" target="_blank" title="Instagram"><i class="fa-brands fa-instagram" style="color: #e1306c;"></i></a>
             <!-- Iconos listos para cuando abras o actualices los canales -->
             <a href="#" title="YouTube (Próximamente)"><i class="fa-brands fa-youtube" style="color: #ff0000; opacity: 0.5;"></i></a>
-            <a href="#" title="LinkedIn"><i class="fa-brands fa-linkedin" style="color: #0a66c2; opacity: 0.5;"></i></a>
+            <a href="#" title="LinkedIn"><i class="fa-brands fa-linkedin-in" style="color: #0a66c2; opacity: 0.5;"></i></a>
+            <!-- ResearchGate (Usamos un icono de gorro de graduación o ciencia) -->
+            <a href="https://researchgate.net" target="_blank" title="ResearchGate (Perfil Académico)">
+                <i class="fa-solid fa-graduation-cap" style="color: #00ccbb;"></i>
+            </a>
+            <!-- Grupo de Investigación (Usamos tu imagen local) -->
+            <!-- Mientras reconstruyes la web, puedes dejar el enlace apuntando a tu sección de trayectoria o #inicio -->
+            <a href="#trayectoria" title="ALIFE: Grupo de Investigación (Próximamente)">
+                <img src="alife.jpeg" alt="ALIFE: Grupo de Investigación" class="group-icon-img">
+            </a>
         </div>
     </section>
 
@@ -106,23 +272,6 @@
         <div class="pdf-viewer-container">
             <!-- Reemplaza "propuesta.pdf" por el nombre real de tu archivo subido -->
             <embed src="propuesta.pdf" type="application/pdf" class="pdf-embed" />
-        </div>
-    </section>
-
-    <!-- SECCIÓN VÍNCULOS PERSONALES Y GRUPOS -->
-    <section id="trayectoria" class="section">
-        <h2 class="section-title">Ecosistema Profesional</h2>
-        <div class="grid-links">
-            <div class="card">
-                <h3><i class="fa-solid fa-user-tie" style="color: var(--primary-color);"></i> Perfil Personal</h3>
-                <p>Conoce más a fondo mi trayectoria docente, distinciones y actividades complementarias fuera de la campaña.</p>
-                <a href="TU_WEB_PERSONAL_URL" target="_blank" class="btn btn-secondary" style="margin-top: 1rem; font-size: 0.85rem;">Visitar Web →</a>
-            </div>
-            <div class="card">
-                <h3><i class="fa-solid fa-users-gear" style="color: var(--primary-color);"></i> Grupo de Investigación</h3>
-                <p>Explora las líneas de investigación, patentes y el equipo de trabajo que lidero actualmente.</p>
-                <a href="URL_DEL_GRUPO_DE_INVESTIGACION" target="_blank" class="btn btn-secondary" style="margin-top: 1rem; font-size: 0.85rem;">Ver Grupo →</a>
-            </div>
         </div>
     </section>
 
@@ -140,19 +289,48 @@
         </div>
     </section>
 
-    <!-- ACADEMIA / RESEARCH GATE & GOOGLE SCHOLAR -->
-    <section id="investigacion" class="section">
-        <h2 class="section-title">Producción Científica</h2>
-        <p style="text-align: center; margin-bottom: 2rem;">Sigue de cerca mis publicaciones indexadas, papers técnicos y métricas de citación en las principales plataformas globales:</p>
+    <section id="documentos" class="documentos-section">
+    <h2 class="section-title">Documentos de Campaña</h2>
+    <div class="cards-container">
         
-        <div class="btn-container">
-            <a href="TU_URL_GOOGLE_SCHOLAR" target="_blank" class="btn btn-secondary" style="border: 1px solid #ddd;"><img src="https://wikimedia.org" width="20" style="margin-right: 8px;"> Google Scholar</a>
-            <a href="TU_URL_RESEARCHGATE" target="_blank" class="btn btn-secondary" style="border: 1px solid #ddd;"><i class="fa-brands fa-researchgate" style="color: #00ccbb; font-size: 1.3rem;"></i> ResearchGate</a>
+        <!-- Tarjeta 1: Presentación de Diapositivas -->
+        <div class="doc-card">
+            <div class="card-icon"><i class="fa-solid fa-file-powerpoint" style="color: #d24726;"></i></div>
+            <h3>Presentación del Proyecto</h3>
+            <p>Resumen ejecutivo en diapositivas sobre los pilares para la transformación de la facultad.</p>
+            <!-- Botón Desactivado -->
+            <span class="btn-download btn-disabled">
+                <i class="fa-solid fa-clock"></i> Próximamente
+            </span>
         </div>
-    </section>
+
+        <!-- Tarjeta 2: Plan Detallado (PDF) -->
+        <div class="doc-card">
+            <div class="card-icon"><i class="fa-solid fa-file-pdf" style="color: #e01e22;"></i></div>
+            <h3>Plan de Trabajo 2026-2028</h3>
+            <p>Documento completo con las metas, indicadores y estrategias por departamentos.</p>
+            <!-- Botón Desactivado -->
+            <span class="btn-download btn-disabled">
+                <i class="fa-solid fa-clock"></i> Próximamente
+            </span>
+        </div>
+
+        <!-- Tarjeta 3: Documento de Apoyo o Anexo -->
+        <div class="doc-card">
+            <div class="fa-solid fa-file-lines" style="color: var(--primary-color); font-size: 45px; margin-bottom: 15px;"></div>
+            <h3>Propuestas Estudiantiles</h3>
+            <p>Compilado de ideas y mesas de trabajo construidas junto a los representantes estudiantiles.</p>
+            <!-- Botón Desactivado -->
+            <span class="btn-download btn-disabled">
+                <i class="fa-solid fa-clock"></i> Próximamente
+            </span>
+        </div>
+
+    </div>
+</section>
 
     <footer style="text-align: center; padding: 2rem; background: var(--secondary-color); color: white; margin-top: 4rem;">
-        <p>© 2026 - Campaña Electoral | Desarrollado con transparencia para la comunidad académica.</p>
+        <p>© 2026 - Campaña Decano 2026-2028 | Desarrollado con transparencia para la comunidad académica.</p>
     </footer>
 
 </body>
