@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campaña Electoral & Academia | Tu Nombre</title>
+    <!-- Iconos de FontAwesome -->
+    <link rel="stylesheet" href="https://cloudflare.com">
+    <style>
+        :root {
+            --primary-color: #2563eb; /* Azul moderno, cámbialo por tu color de campaña */
+            --secondary-color: #1e3a8a;
+            --text-color: #1f2937;
+            --bg-color: #f9fafb;
+            --card-bg: #ffffff;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: var(--bg-color); color: var(--text-color); line-height: 1.6; }
+        a { text-decoration: none; color: inherit; }
+
+        /* Navbar */
+        nav { background: var(--card-bg); padding: 1rem; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 4px rgba(0,0,0,0.1); display: flex; justify-content: center; gap: 1.5rem; }
+        nav a { font-weight: 600; color: var(--text-color); transition: color 0.3s; }
+        nav a:hover { color: var(--primary-color); }
+
+        /* Hero Section */
+        .hero { text-align: center; padding: 4rem 1rem; background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%); }
+        .hero-img { width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 4px solid var(--primary-color); margin-bottom: 1rem; }
+        .hero h1 { font-size: 2.5rem; margin-bottom: 0.5rem; color: var(--secondary-color); }
+        .hero p { font-size: 1.2rem; margin-bottom: 1.5rem; max-width: 600px; margin-left: auto; margin-right: auto; }
+        
+        /* Botones Principales */
+        .btn-container { display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; margin-bottom: 2rem; }
+        .btn { padding: 0.8rem 1.8rem; border-radius: 50px; font-weight: bold; display: inline-flex; align-items: center; gap: 0.5rem; transition: transform 0.2s, box-shadow 0.2s; }
+        .btn:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2); }
+        .btn-primary { background-color: var(--primary-color); color: white; }
+        .btn-secondary { background-color: #e5e7eb; color: var(--text-color); }
+
+        /* Redes Sociales */
+        .social-links { display: flex; justify-content: center; gap: 1.5rem; font-size: 1.8rem; margin-top: 1rem; }
+        .social-links a { transition: color 0.3s; }
+        .social-links a:hover { color: var(--primary-color); }
+
+        /* Contenedores de Secciones */
+        .section { padding: 4rem 1rem; max-width: 1000px; margin: 0 auto; }
+        .section-title { text-align: center; font-size: 2rem; margin-bottom: 2rem; color: var(--secondary-color); position: relative; }
+        .section-title::after { content: ''; display: block; width: 50px; height: 4px; background: var(--primary-color); margin: 8px auto 0; border-radius: 2px; }
+
+        /* Grid de Enlaces Vinculados (Páginas personales, grupos) */
+        .grid-links { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
+        .card { background: var(--card-bg); padding: 1.5rem; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); transition: translateY 0.3s; border-top: 4px solid var(--primary-color); }
+        .card:hover { transform: translateY(-5px); }
+        .card h3 { margin-bottom: 0.5rem; }
+
+        /* Visor de PDF incorporado */
+        .pdf-viewer-container { background: var(--card-bg); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.05); margin-bottom: 2rem; }
+        .pdf-embed { width: 100%; height: 500px; border: none; }
+        
+        /* Alerta para móviles sobre el PDF */
+        .mobile-pdf-notice { display: none; text-align: center; padding: 1rem; background: #fffbeb; color: #b45309; border-radius: 8px; margin-bottom: 1rem; }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            .pdf-embed { display: none; } /* En móviles los PDFs embebidos a veces fallan, mostramos botón */
+            .mobile-pdf-notice { display: block; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#propuesta">Propuesta</a>
+        <a href="#trayectoria">Biografía y Redes</a>
+        <a href="#investigacion">Investigación</a>
+    </nav>
+
+    <!-- INICIO / HERO -->
+    <section id="inicio" class="hero">
+        <!-- Reemplaza con tu foto guardada en la misma carpeta, ej: foto.jpg -->
+        <img src="https://placeholder.com" alt="Tu Nombre" class="hero-img">
+        <h1>Tu Nombre</h1>
+        <p>Candidato a [Nombre del Cargo/Representación]. Investigador, docente y comprometido con la transformación académica.</p>
+        
+        <div class="btn-container">
+            <a href="#propuesta" class="btn btn-primary"><i class="fa-solid fa-file-lines"></i> Ver Propuesta</a>
+            <a href="#hoja-de-vida" class="btn btn-secondary"><i class="fa-solid fa-briefcase"></i> Hoja de Vida</a>
+        </div>
+
+        <div class="social-links">
+            <a href="https://instagram.com" target="_blank" title="Instagram"><i class="fa-brands fa-instagram" style="color: #e1306c;"></i></a>
+            <!-- Iconos listos para cuando abras o actualices los canales -->
+            <a href="#" title="YouTube (Próximamente)"><i class="fa-brands fa-youtube" style="color: #ff0000; opacity: 0.5;"></i></a>
+            <a href="#" title="LinkedIn"><i class="fa-brands fa-linkedin" style="color: #0a66c2; opacity: 0.5;"></i></a>
+        </div>
+    </section>
+
+    <!-- PROPUESTA (PDF EMEDIDO) -->
+    <section id="propuesta" class="section">
+        <h2 class="section-title">Mi Propuesta de Campaña</h2>
+        <div class="mobile-pdf-notice">
+            <p><i class="fa-solid fa-circle-info"></i> Si estás en celular, puedes descargar el documento completo directamente aquí:</p>
+            <a href="propuesta.pdf" target="_blank" class="btn btn-primary" style="margin-top: 0.5rem; padding: 0.5rem 1rem; font-size: 0.9rem;">Abrir PDF</a>
+        </div>
+        <div class="pdf-viewer-container">
+            <!-- Reemplaza "propuesta.pdf" por el nombre real de tu archivo subido -->
+            <embed src="propuesta.pdf" type="application/pdf" class="pdf-embed" />
+        </div>
+    </section>
+
+    <!-- SECCIÓN VÍNCULOS PERSONALES Y GRUPOS -->
+    <section id="trayectoria" class="section">
+        <h2 class="section-title">Ecosistema Profesional</h2>
+        <div class="grid-links">
+            <div class="card">
+                <h3><i class="fa-solid fa-user-tie" style="color: var(--primary-color);"></i> Perfil Personal</h3>
+                <p>Conoce más a fondo mi trayectoria docente, distinciones y actividades complementarias fuera de la campaña.</p>
+                <a href="TU_WEB_PERSONAL_URL" target="_blank" class="btn btn-secondary" style="margin-top: 1rem; font-size: 0.85rem;">Visitar Web →</a>
+            </div>
+            <div class="card">
+                <h3><i class="fa-solid fa-users-gear" style="color: var(--primary-color);"></i> Grupo de Investigación</h3>
+                <p>Explora las líneas de investigación, patentes y el equipo de trabajo que lidero actualmente.</p>
+                <a href="URL_DEL_GRUPO_DE_INVESTIGACION" target="_blank" class="btn btn-secondary" style="margin-top: 1rem; font-size: 0.85rem;">Ver Grupo →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOJA DE VIDA (PDF EMBEDIDO) -->
+    <section id="hoja-de-vida" class="section" style="background: #f3f4f6;">
+        <div style="max-width: 1000px; margin: 0 auto;">
+            <h2 class="section-title">Trayectoria & Hoja de Vida</h2>
+            <div class="mobile-pdf-notice">
+                <a href="hojadevida.pdf" target="_blank" class="btn btn-secondary" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Abrir Hoja de Vida</a>
+            </div>
+            <div class="pdf-viewer-container">
+                <!-- Reemplaza "hojadevida.pdf" por tu archivo -->
+                <embed src="hojadevida.pdf" type="application/pdf" class="pdf-embed" />
+            </div>
+        </div>
+    </section>
+
+    <!-- ACADEMIA / RESEARCH GATE & GOOGLE SCHOLAR -->
+    <section id="investigacion" class="section">
+        <h2 class="section-title">Producción Científica</h2>
+        <p style="text-align: center; margin-bottom: 2rem;">Sigue de cerca mis publicaciones indexadas, papers técnicos y métricas de citación en las principales plataformas globales:</p>
+        
+        <div class="btn-container">
+            <a href="TU_URL_GOOGLE_SCHOLAR" target="_blank" class="btn btn-secondary" style="border: 1px solid #ddd;"><img src="https://wikimedia.org" width="20" style="margin-right: 8px;"> Google Scholar</a>
+            <a href="TU_URL_RESEARCHGATE" target="_blank" class="btn btn-secondary" style="border: 1px solid #ddd;"><i class="fa-brands fa-researchgate" style="color: #00ccbb; font-size: 1.3rem;"></i> ResearchGate</a>
+        </div>
+    </section>
+
+    <footer style="text-align: center; padding: 2rem; background: var(--secondary-color); color: white; margin-top: 4rem;">
+        <p>© 2026 - Campaña Electoral | Desarrollado con transparencia para la comunidad académica.</p>
+    </footer>
+
+</body>
+</html>
